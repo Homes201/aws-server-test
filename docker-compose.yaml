@@ -11,7 +11,7 @@ services:
 
   web:
     build: .
-    command: gunicorn btr_search.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn aws-server-test.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static_volume:/usr/src/app/_static
       - media_volume:/usr/src/app/_media

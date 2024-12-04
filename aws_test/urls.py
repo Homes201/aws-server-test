@@ -1,5 +1,5 @@
 """
-URL configuration for btr_search project.
+URL configuration for aws-server-test project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
