@@ -1,0 +1,1 @@
+chmod +x /home/ubuntu/do_it_django_test/scripts/after-deploy.sh
