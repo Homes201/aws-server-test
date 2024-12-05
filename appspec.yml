@@ -1,10 +1,8 @@
 version: 0.0
 os: linux
 files:
-    - source: /
-      destination: /home/ubuntu/aws-server-test
     - source: /docker-compose.yaml
-      destination: /home/ubuntu/aws-server-test
+      destination: /home/ubuntu/aws-server-test/docker-compose.yaml
     - source: /.env
       destination: /home/ubuntu/aws-server-test
 file_exists_behavior: OVERWRITE
