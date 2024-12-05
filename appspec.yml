@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
     - source: /
-      destination: /home/ubuntu/do_it_django
+      destination: /home/ubuntu/aws-server-test
     - source: /docker-compose.yaml
-      destination: /home/ubuntu/do_it_django
+      destination: /home/ubuntu/aws-server-test
     - source: /.env
-      destination: /home/ubuntu/do_it_django
+      destination: /home/ubuntu/aws-server-test
 file_exists_behavior: OVERWRITE
 
 permissions:
@@ -18,5 +18,5 @@ permissions:
 hooks:
     AfterInstall:
         - location: scripts/after_deploy.sh
-	          timeout: 100000  # 100초
+	          timeout: 10000  # 100초
           runas: root
